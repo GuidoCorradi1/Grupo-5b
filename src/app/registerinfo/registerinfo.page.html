@@ -3,4 +3,37 @@
     <ion-title>Registrate</ion-title>
   </ion-toolbar>
 </ion-header>
-
+<ion-content  color="">
+  <form  #form="ngForm" (ngSubmit)="register(form)">
+    <ion-grid>
+      <ion-row color="" justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div text-center>
+            <h3 id="creatucuenta">Crea tu cuenta!</h3>
+          </div>
+          <div padding>
+            <ion-item>
+              <ion-input  name="name" type="text" placeholder="Name" ngModel required></ion-input>
+            </ion-item>
+            <br>
+            <ion-item>
+              <ion-input name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
+            </ion-item>
+            <br>
+            <ion-item>
+              <ion-input name="password" type="password" placeholder="Password" ngModel required></ion-input>
+            </ion-item>
+            <br>
+            <ion-item>
+              <ion-input name="confirm" type="password" placeholder="Password again" ngModel required></ion-input>
+            </ion-item>
+            <br>
+          </div>
+          <div padding>
+            <ion-button [routerLink]="['']" size="large" type="submit" [disabled]="form.invalid" expand="block">Ingresa</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
