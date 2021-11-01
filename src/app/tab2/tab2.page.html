@@ -22,11 +22,7 @@
   </ion-buttons>
 
   
-  <ion-grid > 
-    <ion-row *ngFor="let x of ingrediente">
-        <ion-button expand="block" (click)="traerFiltro(x.nombre)" fill="solid" color="medium" shape="round" class="botonfiltro">{{x.nombre}}</ion-button>
-      </ion-row>
-  </ion-grid>
+ 
   
 
   
@@ -60,13 +56,19 @@
       <div><ion-button fill="outline" shape="round" size="medium" color="medium" class="botones"><ion-icon name="add-outline" size="medium"></ion-icon></ion-button></div>
     </ion-col>
     <ion-col>
-      <div><ion-button fill="outline" shape="round" size="medium" color="medium" class="botones"><ion-icon name="filter-outline" size="medium"></ion-icon></ion-button></div>
+      <div><ion-button  fill="outline" shape="round" size="medium" color="medium" class="botones"><ion-icon name="filter-outline" size="medium"></ion-icon></ion-button></div>
     </ion-col>
   </ion-row>
 </ion-grid>
 
 
- 
+<ion-grid > 
+  <ion-row size="6" *ngFor="let x of ingrediente" >
+    <ion-col size="12">
+      <ion-button expand="block" (click)="traerFiltro(x.nombre)" fill="solid" color="medium" shape="round" class="botonfiltro"> <b> {{x.nombre}} </b></ion-button>
+    </ion-col> 
+    </ion-row>
+</ion-grid>
  
 <ion-grid id="recetas">
   <ion-row>
@@ -78,7 +80,7 @@
           <ion-button (click)="traerDatos(0)" fill="clear" class="botonesmas"><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-button>
           <div *ngIf="recetita != undefined " >
             <div *ngIf="mostrarReceta[0] != 0 " >
-            {{datos[0].descripcion}}
+           <p id="estilosrecetas"> {{datos[0].descripcion}} </p>
             </div>
          </div>
         </ion-card-header>
@@ -94,7 +96,7 @@
           <ion-button (click)="traerDatos(1)" fill="clear" class="botonesmas"><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-button>
           <div *ngIf="recetita != undefined " > 
             <div *ngIf="mostrarReceta[1] != 0 " >
-              {{datos[1].descripcion}}
+              <p id="estilosrecetas">{{datos[1].descripcion}} </p>
               </div>
          </div>        
         </ion-card-header>
@@ -111,7 +113,7 @@
       <ion-button (click)="traerDatos(2)" fill="clear" class="botonesmas"><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-button>
       <div *ngIf="recetita != undefined " > 
         <div *ngIf="mostrarReceta[2] != 0 " >
-          {{datos[2].descripcion}}
+          <p id="estilosrecetas"> {{datos[2].descripcion}} </p>
           </div>
      </div>        
     </ion-card-header>
@@ -128,7 +130,7 @@
           <ion-button (click)="traerDatos(3)" fill="clear" class="botonesmas"><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-button>
           <div *ngIf="recetita != undefined " > 
             <div *ngIf="mostrarReceta[3] != 0 " >
-              {{datos[3].descripcion}}
+              <p id="estilosrecetas">  {{datos[3].descripcion}} </p>
               </div>
          </div>        
         </ion-card-header>
@@ -145,7 +147,7 @@
           <ion-button (click)="traerDatos(5)" fill="clear" class="botonesmas"><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-button>
           <div *ngIf="recetita != undefined " > 
             <div *ngIf="mostrarReceta[5] != 0 " >
-              {{datos[5].descripcion}}
+              <p id="estilosrecetas"> {{datos[5].descripcion}} <p></p>
               </div>
          </div>        
         </ion-card-header>
@@ -162,7 +164,7 @@
           <ion-button (click)="traerDatos(4)" fill="clear" class="botonesmas"><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-button>
           <div *ngIf="recetita != undefined " > 
             <div *ngIf="mostrarReceta[4] != 0 " >
-              {{datos[4].descripcion}}
+              <p id="estilosrecetas">  {{datos[4].descripcion}} </p>
               </div>
          </div>        
         </ion-card-header>
