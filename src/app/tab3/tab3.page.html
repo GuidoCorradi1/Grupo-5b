@@ -8,22 +8,62 @@
 
 <ion-content [fullscreen]="true" class="usuariocentro">
   <ion-list lines="full" class="ion-no-margin">
-    <ion-list-header >
-      <ion-label>
-        <ion-icon name="person-outline" size="large"></ion-icon>
-      </ion-label>
-     
-    </ion-list-header>
-    <br>
+    
+    
+    <h3>¡Añadí tu Receta!</h3>
     <br>
     
     <ion-grid>
       <ion-row>
         <ion-col>
+          <div>
+          <ion-input [(ngModel)]="nombrerec" type="text" placeholder="Título" required></ion-input>
+
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-input  [(ngModel)]="preciorec"  type="text" placeholder="Precio" required></ion-input>
+
+          </div>
+        </ion-col>
+      </ion-row>
+      <br><br>
+      <ion-row>
+        <ion-col>
+          <div>
+            <ion-input  [(ngModel)]="descripcionrec"  type="text" placeholder="Descripcion" required></ion-input>
+
+          </div>
+        </ion-col>
+      </ion-row>
+      <br><br>
+      <ion-row>
+        <ion-col>
+          <div>            
+            <ion-button size="small" color="medium" (click)="enviarReceta()" type="submit" expand="block">Enviar</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    
+    <br>
+    <ion-list-header >
+      <ion-label>
+        <ion-icon name="person-outline" size="large"></ion-icon>
+      </ion-label>
+    </ion-list-header>
+    <br>
+    <br>
+
+<ion-grid>
+      <ion-row>
+        <ion-col>
           <div>Nombre: </div>
         </ion-col>
         <ion-col>
-          <div></div>
+          <div>{{persona[0].nombre}}</div>
         </ion-col>
       </ion-row>
       <br>
@@ -33,7 +73,7 @@
           <div>Apellido: </div>
         </ion-col>
         <ion-col>
-          <div></div>
+          <div> {{persona[0].apellido}}</div>
         </ion-col>
       </ion-row>
       <br>
@@ -43,7 +83,7 @@
           <div>Usuario: </div>
         </ion-col>
         <ion-col>
-          <div></div>
+          <div>{{cuenta[0].usuario}}</div>
         </ion-col>
       </ion-row>
       <br>
@@ -54,7 +94,62 @@
           <div>Clave: </div>
         </ion-col>
         <ion-col>
-          <div></div>
+          <div>{{cuenta[0].clave}}</div>
+        </ion-col>
+      </ion-row>
+    
+      
+      </ion-grid>
+    </ion-list>
+
+
+
+
+</ion-content>
+
+
+     
+
+<!--
+
+<ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>Nombre: </div>
+        </ion-col>
+        <ion-col>
+          <div>{{persona[0].nombre}}</div>
+        </ion-col>
+      </ion-row>
+      <br>
+      <br>
+      <ion-row>
+        <ion-col>
+          <div>Apellido: </div>
+        </ion-col>
+        <ion-col>
+          <div> {{persona[0].apellido}}</div>
+        </ion-col>
+      </ion-row>
+      <br>
+      <br>
+      <ion-row>
+        <ion-col>
+          <div>Usuario: </div>
+        </ion-col>
+        <ion-col>
+          <div>{{cuenta[0].usuario}}</div>
+        </ion-col>
+      </ion-row>
+      <br>
+      <br>
+    
+      <ion-row>
+        <ion-col>
+          <div>Clave: </div>
+        </ion-col>
+        <ion-col>
+          <div>{{cuenta[0].clave}}</div>
         </ion-col>
       </ion-row>
     
@@ -66,9 +161,6 @@
       
       
         <ion-row>
-          <ion-col offset-4>
-            <div><ion-button shape="round" size="medium" color="medium" class="botones">Olvidé mi Clave</ion-button></div>
-          </ion-col>
           <ion-col>
             <div><ion-button type="sumbit" shape="round" size="medium" color="medium" class="botones"><ion-icon name="checkmark-outline"></ion-icon></ion-button></div>
           </ion-col>
@@ -81,11 +173,4 @@
 
 
 
-
-
-
-</ion-content>
-
-
-     
-
+-->

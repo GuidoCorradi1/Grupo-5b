@@ -1,44 +1,150 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title id="Titulop">
-      Bienvenido/a
+      <ion-icon name="home-outline" size="medium"></ion-icon>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title class="ion-text-center">
-      Log in 
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-<ion-img style="width: 10px; height: 10px;" style="" src="/assets/icon/Fotohome2.jpeg"></ion-img>
+
+<ion-content [fullscreen]="true" class="centro" id="title">
+  
+  <br>
+      <h1>Postres en Casa <ion-icon name="ice-cream-outline"></ion-icon></h1>
+    
+
+  <ion-card>
+    <ion-card-content>
+      Gracias por utilizar <strong>Postres en Casa</strong>, esperamos que disfrutes tu experiencia. 
+      <br>
+      <br>
+      ¿Qué estás esperando? <ion-icon name="hourglass-outline"></ion-icon>
+      <br>
+      <ion-button fill="clear" class="botonesmas" > <ion-icon name="send-outline"></ion-icon></ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <br>
 <br>
-  <form>
-    <ion-item lines="full">
-      <ion-label position="floating">Email</ion-label>
-      <ion-input type="text" required></ion-input>
-    </ion-item>
+  
+      <ion-button fill="solid" color="medium" shape="round" class="botonfiltro" >
+        Añadir Receta  <ion-icon name="add-outline"></ion-icon>
+      </ion-button>
+
 <br>
-    <ion-item lines="full">
-      <ion-label position="floating">Password</ion-label>
-      <ion-input type="password" required></ion-input>
-    </ion-item>
-<br><br>
-    <ion-row>
-      <ion-col>
-        <ion-button type="submit" color="primary" expand="block">Log in</ion-button>
-        <br>
-        <ion-button type="submit" color="primary" expand="block">Registrate</ion-button>
-        <br><br>
-        <a [routerLink]="['/forgot-password']" class="ion-text-center" >Olvidaste tu contraseña?</a>
-      </ion-col>
-    </ion-row>
-  </form>
+<br>
+  <br>
 
+  <h2>Para seguir aprendiendo:</h2>
 
+  <div class="publicidad">
+        <ion-slides>
 
+          <ion-slide>
+            <div>
+                <img  src="https://telefe-static.akamaized.net/media/18228168/tlf_bakeoff_digital_thumb_1024x578pxx.jpg" />
+              </div>
+              <div class="divmargen">
+                Telefe Producciones ©2021
+              </div>
+          </ion-slide>
+      
+          <ion-slide>
+            <div>
+                <img  src="https://e00-ar-marca.uecdn.es/claro/assets/multimedia/imagenes/2021/02/21/16139310022637.jpg" />
+              </div>
+              <div class="divmargen">
+                Telefe Producciones ©2021
+              </div>
+          </ion-slide>
+      
+          <ion-slide>
+            <div>
+                <img  src="https://la.sonychannel.com/sites/la.set/files/ct_series_f_schedule_image/hells-kitchen-s19.jpg" />
+              </div>
+              <div class="divmargen">
+                Sony Pictures Television ©2021
+              </div>
+          </ion-slide>
+
+          <ion-slide>
+            <div>
+                <img  src="https://as01.epimg.net/argentina/imagenes/2021/09/16/tikitakas/1631801785_298748_1631801841_noticia_normal_recorte1.jpg" />
+              </div>
+              <div class="divmargen">
+                El Trece ©2021
+              </div>
+          </ion-slide>
+    
+      
+        </ion-slides>
+      </div>
+
+      
+
+      <!--
+      <h2>Productos:</h2>
+
+      <div class="publicidad">
+        <ion-slides>
+
+          <ion-slide>
+            <div>
+                <img  src="https://www.clubmarket.com.ar/wp-content/uploads/bano-de-reposteria-semiamargo-aguila.jpg" />
+              </div>
+              <div class="divmargen">
+                Aguila ©2021
+              </div>
+          </ion-slide>
+      
+          <ion-slide>
+            <div>
+                <img  src="https://www.clubmarket.com.ar/wp-content/uploads/bano-de-reposteria-rosa-aguila.jpg" />
+              </div>
+              <div class="divmargen">
+                Aguila ©2021
+              </div>
+          </ion-slide>
+      
+          <ion-slide>
+            <div>
+                <img  src="https://www.clubmarket.com.ar/wp-content/uploads/bano-de-reposteria-blanco-aguila.jpg" />
+              </div>
+              <div class="divmargen">
+                Aguila ©2021
+              </div>
+          </ion-slide>
+
+          <ion-slide>
+            <div>
+                <img  src="https://images.fravega.com/f300/1864b41c80c86603f73efb68b50e3623.jpg.webp" />
+              </div>
+              <div class="divmargen">
+                Peabody ©2021
+              </div>
+          </ion-slide>
+
+          <ion-slide>
+            <div>
+                <img  src="https://images.fravega.com/f300/459d19021bb9df025f593560ed3e07af.jpg.webp" />
+              </div>
+              <div class="divmargen">
+                Peabody ©2021
+              </div>
+          </ion-slide>
+
+          <ion-slide>
+            <div>
+                <img  src="https://images.fravega.com/f300/10f79656b946fa389b07bc0d3b21b0ad.jpg" />
+              </div>
+              <div class="divmargen">
+                Peabody ©2021
+              </div>
+          </ion-slide>
+    
+      
+        </ion-slides>
+      </div>
+    -->
 </ion-content>

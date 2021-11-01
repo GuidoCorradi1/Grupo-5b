@@ -6,26 +6,19 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title class="ion-text-center">
-      Log in 
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
-<ion-img style="width: 10px; height: 10px;" style="" src="/assets/icon/Fotohome2.jpeg"></ion-img>
-<br>
+<ion-img src="https://static.vecteezy.com/system/resources/thumbnails/002/454/866/small/coffee-cup-with-heart-doodle-style-icon-free-vector.jpg"></ion-img>
   <form>
     <ion-item lines="full">
-      <ion-label position="floating">Email</ion-label>
+      <ion-label position="floating">Nombre</ion-label>
       <ion-input type="text" required></ion-input>
     </ion-item>
 <br>
     <ion-item lines="full">
-      <ion-label position="floating">Password</ion-label>
-      <ion-input type="password" required></ion-input>
+      <ion-label position="floating">Apellido</ion-label>
+      <ion-input type="text" required></ion-input>
     </ion-item>
 <br><br>
     <ion-row>
@@ -36,7 +29,6 @@
         <br>
         <ion-button [routerLink]="['register']" type="submit" color="danger" expand="block">Registrate</ion-button>
         <br><br>
-        <a [routerLink]="['/forgot-password']" class="ion-text-center" >Olvidaste tu contraseña?</a>
       </ion-col>
     </ion-row>
   </form>
