@@ -61,15 +61,26 @@
   </ion-row>
 </ion-grid>
 
+<!--{{filtrito[0].nombre}}-->
 
 <ion-grid > 
   <ion-row size="6" *ngFor="let x of ingrediente" >
     <ion-col size="12">
       <ion-button expand="block" (click)="traerFiltro(x.nombre)" fill="solid" color="medium" shape="round" class="botonfiltro"> <b> {{x.nombre}} </b></ion-button>
-    </ion-col> 
-    </ion-row>
+    </ion-col>
+  </ion-row>
 </ion-grid>
- 
+
+<ion-grid > 
+  <ion-row size="6" *ngFor="let x of filtrito" >
+    <ion-col size="12">
+     <b> {{x.nombre}} </b>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<!--
+{{filtrito[0].nombre}}
+-->
 <ion-grid id="recetas">
   <ion-row>
     <ion-col>
@@ -213,9 +224,6 @@
 
 
 
-  <br>
-  <br>
-  <br>
 
 
 

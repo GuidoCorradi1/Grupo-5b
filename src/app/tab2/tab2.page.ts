@@ -12,7 +12,7 @@ export class Tab2Page {
   public recetita: any;
   public mostrarReceta: any=[];
   public datofiltro: any;
-  public filtrito: any;
+  public filtrito: any=[];
   public mostrarFiltro: any=[];
   public ingrediente: any=[];
 
