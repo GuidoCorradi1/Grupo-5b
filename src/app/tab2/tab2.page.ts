@@ -19,17 +19,17 @@ export class Tab2Page {
   constructor(private Tab2Service: Tab2Service) {}
 
   ngOnInit(){
-        this.Tab2Service.getReceta().subscribe(data =>{
-        console.log(data);
+      this.Tab2Service.getReceta().subscribe(data =>{
+     console.log(data);
         this.datos=data;
         this.recetita=data;
-        })
+     })
     this.mostrarReceta=[0,0,0,0,0,0];
 
     this.Tab2Service.getIngrediente().subscribe(data =>{
-          console.log(data);
+       console.log(data);
           this.ingrediente=data;
-          })
+       })
   }
 
 
@@ -40,12 +40,10 @@ export class Tab2Page {
 
     traerFiltro(nombrefiltro){
       /*console.log("Ejemplo",this.datos[indicefiltro])*/
-      
-        
     this.Tab2Service.getFiltroch(nombrefiltro).subscribe(data =>{
       console.log("Info", data) 
           this.filtrito=data;
-          })
+           })
     }
 
     
